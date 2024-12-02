@@ -13,6 +13,8 @@ public class AbsoluteAmazon {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.in/");
+
+		//Implicit wait
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 WebElement search = driver.findElement(By.xpath("/html/body/div/header/div/div[1]/div[2]/div/form/div[2]/div[1]/div/input"));
